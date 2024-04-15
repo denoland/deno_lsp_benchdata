@@ -1,0 +1,3 @@
+/* esm.sh - esbuild bundle(@aws-sdk/middleware-expect-continue@3.511.0) denonext production */
+import{HttpRequest as o}from"/v135/@smithy/protocol-http@3.1.1/denonext/protocol-http.mjs";function r(t){return n=>async d=>{let{request:e}=d;return o.isInstance(e)&&e.body&&t.runtime==="node"&&(e.headers={...e.headers,Expect:"100-continue"}),n({...d,request:e})}}var i={step:"build",tags:["SET_EXPECT_HEADER","EXPECT_HEADER"],name:"addExpectContinueMiddleware",override:!0},p=t=>({applyToStack:n=>{n.add(r(t),i)}});export{r as addExpectContinueMiddleware,i as addExpectContinueMiddlewareOptions,p as getAddExpectContinuePlugin};
+//# sourceMappingURL=middleware-expect-continue.mjs.map

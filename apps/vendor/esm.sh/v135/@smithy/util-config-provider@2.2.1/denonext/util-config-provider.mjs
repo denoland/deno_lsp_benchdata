@@ -1,0 +1,3 @@
+/* esm.sh - esbuild bundle(@smithy/util-config-provider@2.2.1) denonext production */
+var u=(r,e,n)=>{if(e in r){if(r[e]==="true")return!0;if(r[e]==="false")return!1;throw new Error(`Cannot load ${n} "${e}". Expected "true" or "false", got ${r[e]}.`)}};var a=(r,e,n)=>{if(!(e in r))return;let t=parseInt(r[e],10);if(Number.isNaN(t))throw new TypeError(`Cannot load ${n} '${e}'. Expected number, got '${r[e]}'.`);return t};var o;(function(r){r.ENV="env",r.CONFIG="shared config entry"})(o||(o={}));export{o as SelectorType,u as booleanSelector,a as numberSelector};
+//# sourceMappingURL=util-config-provider.mjs.map

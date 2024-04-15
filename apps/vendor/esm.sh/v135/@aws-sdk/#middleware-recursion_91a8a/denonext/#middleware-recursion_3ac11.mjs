@@ -1,0 +1,4 @@
+/* esm.sh - esbuild bundle(@aws-sdk/middleware-recursion-detection@3.511.0) denonext production */
+import __Process$ from "node:process";
+import{HttpRequest as _}from"/v135/@smithy/protocol-http@3.1.1/denonext/protocol-http.mjs";var i="X-Amzn-Trace-Id",a="AWS_LAMBDA_FUNCTION_NAME",p="_X_AMZN_TRACE_ID",A=n=>e=>async o=>{let{request:t}=o;if(!_.isInstance(t)||n.runtime!=="node"||t.headers.hasOwnProperty(i))return e(o);let d=__Process$.env[a],r=__Process$.env[p],s=c=>typeof c=="string"&&c.length>0;return s(d)&&s(r)&&(t.headers[i]=r),e({...o,request:t})},E={step:"build",tags:["RECURSION_DETECTION"],name:"recursionDetectionMiddleware",override:!0,priority:"low"},N=n=>({applyToStack:e=>{e.add(A(n),E)}});export{E as addRecursionDetectionMiddlewareOptions,N as getRecursionDetectionPlugin,A as recursionDetectionMiddleware};
+//# sourceMappingURL=middleware-recursion-detection.mjs.map

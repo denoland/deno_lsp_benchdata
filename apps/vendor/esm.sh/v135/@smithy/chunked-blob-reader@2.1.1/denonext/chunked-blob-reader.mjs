@@ -1,0 +1,3 @@
+/* esm.sh - esbuild bundle(@smithy/chunked-blob-reader@2.1.1) denonext production */
+function f(r,d,o=1024*1024){return new Promise((l,n)=>{let e=new FileReader;e.addEventListener("error",n),e.addEventListener("abort",n);let a=r.size,t=0;function i(){if(t>=a){l();return}e.readAsArrayBuffer(r.slice(t,Math.min(a,t+o)))}e.addEventListener("load",u=>{let s=u.target.result;d(new Uint8Array(s)),t+=s.byteLength,i()}),i()})}export{f as blobReader};
+//# sourceMappingURL=chunked-blob-reader.mjs.map

@@ -1,0 +1,52 @@
+{
+  "manifest": {
+    "/bytes.ts": {
+      "size": 4538,
+      "checksum": "sha256-cca092bd3662056c150b4db90e9ef827b574eafa7bd929a6ca12c702f246484e"
+    },
+    "/printf_test.ts": {
+      "size": 26238,
+      "checksum": "sha256-b0cbe20ae24ef28558d04d7394a27483422e02eb2c30afc147cc4faae9e65283"
+    },
+    "/colors_test.ts": {
+      "size": 6420,
+      "checksum": "sha256-8c94ff9595076fa6b772faa12983ed4bf7f2804fc278efd382174d267cc5a1ec"
+    },
+    "/deno.json": {
+      "size": 194,
+      "checksum": "sha256-bd5d7618bf8406597c365355ee3f68be5ce05b81df29c296e271278905998373"
+    },
+    "/printf.ts": {
+      "size": 27890,
+      "checksum": "sha256-3f444357880c8fd1032342520e6e4197304bdd914d9c548710ec9446b615f30c"
+    },
+    "/duration.ts": {
+      "size": 4217,
+      "checksum": "sha256-aee068ae4f04f703d4b5e9efa5a33834460bfdb7a3e3e8b2afcb2b0529175e08"
+    },
+    "/colors.ts": {
+      "size": 12872,
+      "checksum": "sha256-85fab9452ef08d5db723cae5202b95b3e072fe7639cf4608426b665e136af4da"
+    },
+    "/bytes_test.ts": {
+      "size": 7144,
+      "checksum": "sha256-ad5ea90ebc153c393e8a2e57991f0328145575b12ba3faaf2423b99579719499"
+    },
+    "/duration_test.ts": {
+      "size": 1563,
+      "checksum": "sha256-6859c5d667f3b225495023403ca0f09541699a99e8a58fc98513c775b38390d2"
+    }
+  },
+  "moduleGraph1": {
+    "/bytes.ts": {},
+    "/duration.ts": {},
+    "/printf.ts": {},
+    "/colors.ts": {}
+  },
+  "exports": {
+    "./bytes": "./bytes.ts",
+    "./colors": "./colors.ts",
+    "./duration": "./duration.ts",
+    "./printf": "./printf.ts"
+  }
+}

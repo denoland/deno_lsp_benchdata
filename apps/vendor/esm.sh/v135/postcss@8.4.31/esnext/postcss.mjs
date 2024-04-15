@@ -1,0 +1,3 @@
+/* esm.sh - esbuild bundle(postcss@8.4.31) esnext production */
+import o from"/v135/postcss@8.4.31/esnext/lib/postcss.js";var e=o,r=o.stringify,n=o.fromJSON,s=o.plugin,c=o.parse,p=o.list,x=o.document,l=o.comment,u=o.atRule,m=o.rule,a=o.decl,i=o.root,R=o.CssSyntaxError,d=o.Declaration,f=o.Container,g=o.Processor,C=o.Document,y=o.Comment,D=o.Warning,N=o.AtRule,S=o.Result,A=o.Input,E=o.Rule,I=o.Root,J=o.Node;export{N as AtRule,y as Comment,f as Container,R as CssSyntaxError,d as Declaration,C as Document,A as Input,J as Node,g as Processor,S as Result,I as Root,E as Rule,D as Warning,u as atRule,l as comment,a as decl,e as default,x as document,n as fromJSON,p as list,c as parse,s as plugin,i as root,m as rule,r as stringify};
+//# sourceMappingURL=postcss.mjs.map

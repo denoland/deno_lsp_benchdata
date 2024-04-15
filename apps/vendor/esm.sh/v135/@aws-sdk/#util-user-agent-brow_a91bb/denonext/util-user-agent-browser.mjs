@@ -1,0 +1,3 @@
+/* esm.sh - esbuild bundle(@aws-sdk/util-user-agent-browser@3.511.0) denonext production */
+import r from"/v135/bowser@2.11.0/denonext/bowser.mjs";var t=({serviceId:o,clientVersion:s})=>async()=>{let n=typeof window<"u"&&window?.navigator?.userAgent?r.parse(window.navigator.userAgent):void 0,e=[["aws-sdk-js",s],["ua","2.0"],[`os/${n?.os?.name||"other"}`,n?.os?.version],["lang/js"],["md/browser",`${n?.browser?.name??"unknown"}_${n?.browser?.version??"unknown"}`]];return o&&e.push([`api/${o}`,s]),e};export{t as defaultUserAgent};
+//# sourceMappingURL=util-user-agent-browser.mjs.map

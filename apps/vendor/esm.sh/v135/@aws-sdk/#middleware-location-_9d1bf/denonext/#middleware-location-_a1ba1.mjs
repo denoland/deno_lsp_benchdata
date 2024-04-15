@@ -1,0 +1,3 @@
+/* esm.sh - esbuild bundle(@aws-sdk/middleware-location-constraint@3.511.0) denonext production */
+function a(n){return o=>async t=>{let{CreateBucketConfiguration:i}=t.input,e=await n.region();return!i?.LocationConstraint&&!i?.Location&&(t={...t,input:{...t.input,CreateBucketConfiguration:e==="us-east-1"?void 0:{LocationConstraint:e}}}),o(t)}}var r={step:"initialize",tags:["LOCATION_CONSTRAINT","CREATE_BUCKET_CONFIGURATION"],name:"locationConstraintMiddleware",override:!0},c=n=>({applyToStack:o=>{o.add(a(n),r)}});export{c as getLocationConstraintPlugin,a as locationConstraintMiddleware,r as locationConstraintMiddlewareOptions};
+//# sourceMappingURL=middleware-location-constraint.mjs.map

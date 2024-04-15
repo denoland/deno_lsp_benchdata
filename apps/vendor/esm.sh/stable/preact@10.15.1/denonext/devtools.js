@@ -1,0 +1,3 @@
+/* esm.sh - esbuild bundle(preact@10.15.1/devtools) denonext production */
+import{options as o,Fragment as _,Component as a}from"/stable/preact@10.15.1/denonext/preact.mjs";function r(n,t){return o.__a&&o.__a(t),n}typeof Deno  <"u"&&window.__PREACT_DEVTOOLS__&&window.__PREACT_DEVTOOLS__.attachPreact("10.15.1",o,{Fragment:_,Component:a});export{r as addHookName};
+//# sourceMappingURL=devtools.js.map

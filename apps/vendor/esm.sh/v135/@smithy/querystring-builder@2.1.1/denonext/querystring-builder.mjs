@@ -1,0 +1,3 @@
+/* esm.sh - esbuild bundle(@smithy/querystring-builder@2.1.1) denonext production */
+import{escapeUri as o}from"/v135/@smithy/util-uri-escape@2.1.1/denonext/util-uri-escape.mjs";function l(s){let i=[];for(let e of Object.keys(s).sort()){let r=s[e];if(e=o(e),Array.isArray(r))for(let t=0,n=r.length;t<n;t++)i.push(`${e}=${o(r[t])}`);else{let t=e;(r||typeof r=="string")&&(t+=`=${o(r)}`),i.push(t)}}return i.join("&")}export{l as buildQueryString};
+//# sourceMappingURL=querystring-builder.mjs.map

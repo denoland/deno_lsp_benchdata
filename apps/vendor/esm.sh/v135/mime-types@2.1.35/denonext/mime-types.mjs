@@ -1,0 +1,16 @@
+/* esm.sh - esbuild bundle(mime-types@2.1.35) denonext production */
+import * as __0$ from "/v135/mime-db@1.52.0/denonext/mime-db.mjs";
+import * as __1$ from "node:path";
+var require=n=>{const e=m=>typeof m.default<"u"?m.default:m,c=m=>Object.assign({},m);switch(n){case"mime-db":return e(__0$);case"path":return e(__1$);default:throw new Error("module \""+n+"\" not found");}};
+var k=Object.create;var p=Object.defineProperty;var C=Object.getOwnPropertyDescriptor;var w=Object.getOwnPropertyNames;var L=Object.getPrototypeOf,P=Object.prototype.hasOwnProperty;var T=(r=>typeof require<"u"?require:typeof Proxy<"u"?new Proxy(r,{get:(e,t)=>(typeof require<"u"?require:e)[t]}):r)(function(r){if(typeof require<"u")return require.apply(this,arguments);throw Error('Dynamic require of "'+r+'" is not supported')});var X=(r,e)=>()=>(e||r((e={exports:{}}).exports,e),e.exports),j=(r,e)=>{for(var t in e)p(r,t,{get:e[t],enumerable:!0})},x=(r,e,t,c)=>{if(e&&typeof e=="object"||typeof e=="function")for(let a of w(e))!P.call(r,a)&&a!==t&&p(r,a,{get:()=>e[a],enumerable:!(c=C(e,a))||c.enumerable});return r},o=(r,e,t)=>(x(r,e,"default"),t&&x(t,e,"default")),E=(r,e,t)=>(t=r!=null?k(L(r)):{},x(e||!r||!r.__esModule?p(t,"default",{value:r,enumerable:!0}):t,r));var v=X(n=>{"use strict";var u=T("mime-db"),y=T("path").extname,_=/^\s*([^;\s]*)(?:;|\s|$)/,R=/^text\//i;n.charset=g;n.charsets={lookup:g};n.contentType=q;n.extension=G;n.extensions=Object.create(null);n.lookup=M;n.types=Object.create(null);Y(n.extensions,n.types);function g(r){if(!r||typeof r!="string")return!1;var e=_.exec(r),t=e&&u[e[1].toLowerCase()];return t&&t.charset?t.charset:e&&R.test(e[1])?"UTF-8":!1}function q(r){if(!r||typeof r!="string")return!1;var e=r.indexOf("/")===-1?n.lookup(r):r;if(!e)return!1;if(e.indexOf("charset")===-1){var t=n.charset(e);t&&(e+="; charset="+t.toLowerCase())}return e}function G(r){if(!r||typeof r!="string")return!1;var e=_.exec(r),t=e&&n.extensions[e[1].toLowerCase()];return!t||!t.length?!1:t[0]}function M(r){if(!r||typeof r!="string")return!1;var e=y("x."+r).toLowerCase().substr(1);return e&&n.types[e]||!1}function Y(r,e){var t=["nginx","apache",void 0,"iana"];Object.keys(u).forEach(function(a){var h=u[a],i=h.extensions;if(!(!i||!i.length)){r[a]=i;for(var l=0;l<i.length;l++){var f=i[l];if(e[f]){var m=t.indexOf(u[e[f]].source),d=t.indexOf(h.source);if(e[f]!=="application/octet-stream"&&(m>d||m===d&&e[f].substr(0,12)==="application/"))continue}e[f]=a}}})}});var s={};j(s,{charset:()=>A,charsets:()=>F,contentType:()=>U,default:()=>I,extension:()=>$,extensions:()=>z,lookup:()=>B,types:()=>D});var b=E(v());o(s,E(v()));var{charset:A,charsets:F,contentType:U,extension:$,extensions:z,lookup:B,types:D}=b,{default:O,...H}=b,I=O!==void 0?O:H;export{A as charset,F as charsets,U as contentType,I as default,$ as extension,z as extensions,B as lookup,D as types};
+/*! Bundled license information:
+
+mime-types/index.js:
+  (*!
+   * mime-types
+   * Copyright(c) 2014 Jonathan Ong
+   * Copyright(c) 2015 Douglas Christopher Wilson
+   * MIT Licensed
+   *)
+*/
+//# sourceMappingURL=mime-types.mjs.map

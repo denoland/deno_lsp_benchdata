@@ -1,0 +1,3 @@
+/* esm.sh - esbuild bundle(@smithy/middleware-content-length@2.1.1) denonext production */
+import{HttpRequest as a}from"/v135/@smithy/protocol-http@3.1.1/denonext/protocol-http.mjs";var c="content-length";function i(n){return r=>async o=>{let e=o.request;if(a.isInstance(e)){let{body:s,headers:d}=e;if(s&&Object.keys(d).map(t=>t.toLowerCase()).indexOf(c)===-1)try{let t=n(s);e.headers={...e.headers,[c]:String(t)}}catch{}}return r({...o,request:e})}}var h={step:"build",tags:["SET_CONTENT_LENGTH","CONTENT_LENGTH"],name:"contentLengthMiddleware",override:!0},g=n=>({applyToStack:r=>{r.add(i(n.bodyLengthChecker),h)}});export{i as contentLengthMiddleware,h as contentLengthMiddlewareOptions,g as getContentLengthPlugin};
+//# sourceMappingURL=middleware-content-length.mjs.map

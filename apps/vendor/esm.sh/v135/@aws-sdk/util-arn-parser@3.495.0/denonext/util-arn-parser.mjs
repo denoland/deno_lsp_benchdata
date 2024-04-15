@@ -1,0 +1,3 @@
+/* esm.sh - esbuild bundle(@aws-sdk/util-arn-parser@3.495.0) denonext production */
+var c=r=>typeof r=="string"&&r.indexOf("arn:")===0&&r.split(":").length>=6,a=r=>{let e=r.split(":");if(e.length<6||e[0]!=="arn")throw new Error("Malformed ARN");let[,t,n,o,i,...s]=e;return{partition:t,service:n,region:o,accountId:i,resource:s.join(":")}},p=r=>{let{partition:e="aws",service:t,region:n,accountId:o,resource:i}=r;if([t,n,o,i].some(s=>typeof s!="string"))throw new Error("Input ARN object is invalid");return`arn:${e}:${t}:${n}:${o}:${i}`};export{p as build,a as parse,c as validate};
+//# sourceMappingURL=util-arn-parser.mjs.map

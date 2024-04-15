@@ -1,0 +1,3 @@
+/* esm.sh - esbuild bundle(@smithy/url-parser@2.1.1) denonext production */
+import{parseQueryString as s}from"/v135/@smithy/querystring-parser@2.1.1/denonext/querystring-parser.mjs";var i=r=>{if(typeof r=="string")return i(new URL(r));let{hostname:o,pathname:p,port:t,protocol:a,search:e}=r,n;return e&&(n=s(e)),{hostname:o,port:t?parseInt(t):void 0,protocol:a,path:p,query:n}};export{i as parseUrl};
+//# sourceMappingURL=url-parser.mjs.map
